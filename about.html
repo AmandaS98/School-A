@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School A</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="about.html"><img src=""></a> <!--the logo must come here-->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i> <!-- currently this doesn't appear :( -->
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CURRICULAR</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> <!-- currently this doesn't appear :( -->
+            </nav>
+            <h1>About Us</h1>
+        </section>
+        <!--About Us content-->
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the country's most prestigious school</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor velit. Sed metus erat, fringilla tristique cursus id, ornare non nisl.<br>Morbi pellentesque nibh id est egestas, vitae pharetra nisl tempor. Nam egestas metus id pulvinar suscipit. Ut in enim ut nisl venenatis mollis. Maecenas eu feugiat nisi.</p>
+                    <a href="" class="hero-btn blue-btn">Explore Now</a>
+                </div>
+                <div class="about-col">
+                    <img src="assets/about.jpg">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- JavaScript for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+     
+
+       
+
+
+        
+
+        
+        <!--Footer-->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor velit. Sed metus erat, fringilla tristique cursus id, ornare non nisl.<br>Morbi pellentesque nibh id est egestas, vitae pharetra nisl tempor. Nam egestas metus id pulvinar suscipit. Ut in enim ut nisl venenatis mollis. Maecenas eu feugiat nisi.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instargram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by ABC</p>
+        </section>
+
+
+        
+
+    </body>
+</html>
