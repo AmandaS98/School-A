@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
     </head>
     <body>
         <section class="header">
@@ -16,8 +16,8 @@
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i> <!-- currently this doesn't appear :( -->
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
                         <li><a href="">CURRICULAR</a></li>
                         <li><a href="">BLOG</a></li>
                         <li><a href="">CONTACT</a></li>
@@ -28,10 +28,23 @@
 
             <div class="text-box">
                 <h1>School A</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor velit. Sed metus erat, fringilla tristique cursus id, ornare non nisl. Morbi pellentesque nibh id est egestas, vitae pharetra nisl tempor. Nam egestas metus id pulvinar suscipit. Ut in enim ut nisl venenatis mollis. Maecenas eu feugiat nisi. I</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor velit. Sed metus erat, fringilla tristique cursus id, ornare non nisl. Morbi pellentesque nibh id est egestas, vitae pharetra nisl tempor. Nam egestas metus id pulvinar suscipit. Ut in enim ut nisl venenatis mollis. Maecenas eu feugiat nisi.</p>
                 <a href="" class="hero-btn">Visit us to find out</a>
             </div>
         </section>
+
+        <!-- JavaScript for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
 
         <!-- Curricular-->
 
@@ -141,17 +154,31 @@
                 </div>
             </div>
 
-        <!-- JavaScript for toggle menu-->
-        <script>
-            var navLinks = document.getElementById("navLinks");
+        </section>
 
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
-            function hideMenu(){
-                navLinks.style.right = "-200px";
-            }
-        </script>
+        <!-- Call To Action-->
+
+        <section class="cta">
+            <h1>Apply For Our School<br>Anywhere From The Country</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+
+        <!--Footer-->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et tortor velit. Sed metus erat, fringilla tristique cursus id, ornare non nisl.<br>Morbi pellentesque nibh id est egestas, vitae pharetra nisl tempor. Nam egestas metus id pulvinar suscipit. Ut in enim ut nisl venenatis mollis. Maecenas eu feugiat nisi.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instargram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by ABC</p>
+        </section>
+
+
+        
 
     </body>
 </html>
